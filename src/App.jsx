@@ -6,7 +6,7 @@ import City from "./City";
 
 function App() {
   const [city, setCity] = useState();
-  const key = "9c87b0059f285dd4ae40868308ff23ca";
+  const key = "";
   const [search, setSearch] = useState("");
   useEffect(() => {
     async function getApi() {
