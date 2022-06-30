@@ -6,8 +6,9 @@ import City from "./City";
 
 function App() {
   const [city, setCity] = useState();
-  const key = "";
+  const key = "9c87b0059f285dd4ae40868308ff23ca";
   const [search, setSearch] = useState("");
+  
   useEffect(() => {
     async function getApi() {
       try {
@@ -31,7 +32,7 @@ function App() {
         placeholder="Placeholder"
         className="px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"/>
       </div>
-      { city && <City city={city}/> }
+      { city && <City city={city}/> } {/* short circuit */}
     </div>
   </div>
   );
